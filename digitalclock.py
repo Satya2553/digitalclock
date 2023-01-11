@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import Label,StringVar,Button
 from datetime import datetime
 from tkcalendar import Calendar
-import calendar
 
 mainWindow=tk.Tk()
 mainWindow.title("DIGITAL CLOCK")
@@ -40,18 +39,7 @@ date_time_label.pack(anchor='center')
 cal=Calendar(mainWindow,selectmode='day',year=int(year),month=int(month),day=int(day))
 cal.pack(pady='10')
 update_date_time()
-# yy=int(year)
-# mm=int(month)
-# def previous():
-#     mm=int(month)
-# def next():
-#     mm=int(month)
-# previous=tk.Button(mainWindow,text="PREVIOUS",command=previous)
-# next=tk.Button(mainWindow,text="NEXT",command=next)
-# previous.pack()
-# next.pack()
-# calendar_label=Label(mainWindow,text=calendar.month(yy,mm),relief='groove',bg='black',fg='white',font=19)
-# calendar_label.pack()
+
 mainWindow.geometry('800x400')
 mainWindow.resizable(False,False)
 mainWindow.mainloop()
